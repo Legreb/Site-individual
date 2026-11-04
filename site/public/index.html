@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chronos Network | Home</title>
+
+    <script src="./js/sessao.js"></script>
+
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="icon" href="./assets/icon/favicon2.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body class="home-page">
+    
+    <!-- HEADER / NAVBAR -->
+    <div class="header">
+      <div class="container">
+        <h1 class="titulo"> <img src="assets/imgs/logo.png" width="200" height="130" alt="Logo"></h1>
+        <ul class="navbar">
+          <li class="agora">
+            <a href="#"> <img src="assets/imgs/fita1.png" width="125" height="25" alt="fita1"></a>
+          </li>
+          <li>
+            <a href="sobre.html"><img src="assets/imgs/fita2.png" width="125" height="25" alt="fita2"></a>
+          </li>
+          <li>
+            <a href="login.html"><img src="assets/imgs/fita3.png" width="125" height="25" alt="fita3"></a>
+          </li>
+          <li>
+            <a href="cadastro.html"><img src="assets/imgs/fita4.png" width="125" height="25" alt="fita4"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- BANNER DE DESTAQUE -->
+    <div class="banner">
+      <div class="container">
+        <p>CONECTANDO OS SOBREVIVENTES DO PROGRAMA NULL.</p>
+      </div>
+    </div>
+  
+    <!-- CARDS INFORMATIVOS DA HOME -->
+    <div class="social" id="lore">
+      <div class="container">
+        <div class="boxes">
+          <div class="box">
+            <img src="assets/imgs/katana.png" width="200" height="150" alt="Universo">
+            <h4>O Universo</h4>
+            <p>Explore as teorias mais profundas sobre New Mecca, o passado de Zero e Dragão, e os mistérios por trás da Guerra Cromaga.</p>
+          </div>
+          <div class="box">
+            <img src="assets/imgs/seringa.png" width="170" height="150" alt="Chronos">
+            <h4>Chronos</h4>
+            <p>Entenda os efeitos da manipulação temporal, a desaceleração da percepção e as consequências irreversíveis da abstinência.</p>
+          </div>
+          <div class="box">
+            <img src="assets/imgs/comunidade.png" width="200" height="150" alt="DLC">
+            <h4>Comunidade & DLC</h4>
+            <p>Acompanhe os últimos relatórios de desenvolvimento da expansão gratuita</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- RODAPÉ
+    <div class="footer">
+      <div class="container">
+        <h4>Desenvolvido por um fã de Katana ZERO &hearts; SPTech &copy; 2026</h4>
+      </div>
+    </div> -->
+<script>
+  const passa = new Audio('assets/sons/passa.wav')
+  const escolhe = new Audio('assets/sons/escolhe.wav')
+  passa.volume =0.5
+  escolhe.volume =0.5
+  const botoes = document.querySelectorAll('.navbar a')
+  botoes.forEach(botao=>{
+    botao.addEventListener('mouseenter', ()=>{
+      passa.currentTime=0
+      passa.play()
+    })
+    botao.addEventListener('click',()=>{
+      escolhe.currentTime=0
+      escolhe.play()
+    })
+  })
+</script>
+</body>
+
+</html>
